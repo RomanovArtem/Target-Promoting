@@ -38,6 +38,9 @@ body {
 .header {
   display: table;
   visibility: hidden;
+  margin: 0 auto;
+  width: 80%;
+  min-width: 800px;
 }
 .header .logo {
   display: table-cell;
@@ -94,7 +97,7 @@ body {
 .content .services:before {
   content: "";
   background-image: url("../img/angled-decorator__top.png");
-  height: 112px;
+  height:134px;
   width: 100%;
   display: inline-block;
   background-position-x: center;
@@ -103,14 +106,15 @@ body {
 }
 .content .services:after {
   content: "";
-  background-image: url("../img/angled-decorator__bottom.png");
-  height: 112px;
-  width: 100vw;
-  display: inline-block;
-  /*margin-left: -4px; */
-  bottom: -6px;
-  position: relative;
-  background-position-x: center;
+    background-image: url(../img/angled-decorator__bottom.png);
+    display: inline-block;
+    z-index: 2000;
+    height: 135px;
+    width: 100%;
+    display: inline-block;
+    background-position-x: center;
+    position: relative;
+    top: 5px;
 }
 .content .services__container {
   margin: 0 auto;
@@ -125,20 +129,24 @@ body {
   position: relative;
   right: 55px;
   top: 23px;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .content .services__container__offer__header {
   border-bottom: 1px solid #ff934d;
   display: inline-block;
   margin: 0;
   margin-left: -40px;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .content .services__container__offer__description {
   color: #ffd2b5;
   margin-top: 25px;
   margin-left: 25px;
-  transition: all 2s ease-in-out;
+  transition: all 1s ease-in-out;
+  z-index: 103;
+  font-size: 23px;
+  font-family: "Segoe UI";
+  float: left;
 }
 .about__header {
   font-size: 74px;
@@ -220,6 +228,11 @@ input:focus {
   background-color: #eb3d00;
   box-shadow: inset 0 3px 0 #c13b17;
 }
+.clients {
+	margin: 0 auto; 
+	width: 90%; 
+	min-width: 800px;
+}
 .clients__header {
   font-size: 30px;
   font-family: "Segoe UI";
@@ -236,29 +249,86 @@ input:focus {
 .map-decorator {
   background-image: url("../img/angled-decorator__top.png");
   z-index: 2000;
-  position: absolute;
-  height: 111px;
-  width: 100vw;
-  background-position: bottom;
-  background-repeat: no-repeat;
+    background-image: url(../img/angled-decorator__top.png);
+    height: 134px;
+    width: 100%;
+    display: inline-block;
+    background-position-x: center;
+    position: relative;
+    top: 138px;
 }
 #map {
   height: 400px;
   margin-top: 25px;
 }
 .services__container__offer__line {
-	opacity: 0;
-	width: 100%;
+	right: 4.5%;
+    opacity: 0;
     position: absolute;
-    left: 0; 
+    max-width: 1920px;
+    min-width: 700px;
 }
 .services__container__offer:hover .move-left {
 	 transform: translate(-250px, 20px);	
+	 cursor: pointer;
 }
 .services__container__offer:hover .services__container__offer__line {
-	transition: 2s;
+	transition: 1s;
 	opacity: 1;
 }
 .services__container__offer:hover .services__container__offer__header {
 	 text-shadow: 0 0 30px #ffffff;
+}
+.foto {
+	opacity: 0;
+	width: 380px;
+    height: 252px;
+    margin-left: 708px;
+	transition: 1s;
+}
+.services__container__offer:hover .foto {
+	transition: 1s;
+	opacity: 1;
+}
+.services__container__offer .f__foto {
+	opacity: 0;
+	width: 110px;
+    height: 165px;
+    transform: rotate(-10deg);
+    z-index: 102;
+
+}
+.services__container__offer .s__foto {
+	opacity: 0;
+	width: 110px;
+    height: 165px;
+    transform: rotate(10deg);
+    z-index: 101;
+	
+}
+.services__container__offer .t__foto {
+	opacity: 0;
+    width: 110px;
+    height: 165px;
+    transform: rotate(-5deg);
+    left: 71%;
+    bottom: -65%;
+    z-index: 100;
+	
+}
+.services__container__offer:hover .f__foto{
+	transition: 9s;
+	opacity: 1;
+}
+.services__container__offer:hover .s__foto{
+	transition: 10s;
+	opacity: 1;
+}
+.services__container__offer:hover .t__foto{
+	transition: 11s;
+	opacity: 1;
+}
+.about__text {
+	font-size: 23px;
+    font-family: "Segoe UI";
 }
