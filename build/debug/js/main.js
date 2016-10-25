@@ -15,8 +15,8 @@
   initMap = function() {
     var map;
     map = new ymaps.Map("map", {
-      center: [54.529926, 36.291399],
-      zoom: 16,
+      center: [54.507991, 36.253211],
+      zoom: 17,
       controls: []
     });
     return createPointer(map);

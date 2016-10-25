@@ -17,7 +17,7 @@ img.client-logo:hover {
   background-image: url("../img/button.png");
   background-size: 120px 40px;
   position: fixed;
-  top: 30px;
+  top: 150px;
   left: 50%;
   margin-left: 490px;
   width: 120px;
@@ -32,15 +32,17 @@ body {
 .tpr-container {
   background-color: #fff;
   margin: 0 auto;
-  max-width: 1920px;
-  min-width: 700px;
+  max-width: 100%;
+    min-width: 700px;
 }
 .header {
   display: table;
   visibility: hidden;
   margin: 0 auto;
-  width: 80%;
+  max-width: 1800px;
+  width: 80%;f
   min-width: 800px;
+  
 }
 .header .logo {
   display: table-cell;
@@ -49,9 +51,10 @@ body {
 }
 .header .menu {
   display: table-cell;
-  padding-left: 10px;
+  padding-left: 6%;
   vertical-align: middle;
-  width: 100%;
+  max-width: 600px; 
+  min-width: 100px;
 }
 .header .menu__link {
   margin: 0 18px 0 18px;
@@ -86,40 +89,45 @@ body {
   margin-top: 58px;
 }
 .content .about {
-  max-width: 709px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .content .services {
   background-color: #ff6500;
   color: #fff;
-  padding: 150px 0 0 0;
+  height: auto;
+  overflow: hidden;
 }
-.content .services:before {
-  content: "";
-  background-image: url("../img/angled-decorator__top.png");
-  height:134px;
-  width: 100%;
-  display: inline-block;
-  background-position-x: center;
-  position: relative;
-  top: -153px;
+.content .figure_1 .treug {
+  max-width: 100%;
+  min-width: 700px;
+  height: auto;
 }
-.content .services:after {
-  content: "";
-    background-image: url(../img/angled-decorator__bottom.png);
-    display: inline-block;
-    z-index: 2000;
-    height: 135px;
-    width: 100%;
-    display: inline-block;
-    background-position-x: center;
-    position: relative;
-    top: 5px;
+.content .figure_1 .uptr {
+	border-color: #fff #ff6500; #ff6500; #ff6500;
+    border-style: solid;
+    border-width: 12vh 75vw 0 26vw;
+    height: 0;
+    width: 0;
+}
+.content .figure_2 .treug {
+  max-width: 100%;
+  min-width: 700px;
+  height: auto;
+  margin-top: 115px;
+}
+.content .figure_2 .uptr {
+	border-color: #ff6500 #fff;
+    border-style: solid;
+    border-width: 12vh 75vw 0 26vw;
+    height: 0;
+    width: 0;
 }
 .content .services__container {
   margin: 0 auto;
-  max-width: 709px;
+  max-width: 800px;
   margin-top: -90px;
+  padding: 150px 0 0 0;
 }
 .content .services__container__header {
   margin: 0;
@@ -149,17 +157,17 @@ body {
   float: left;
 }
 .about__header {
-  font-size: 74px;
+  font-size: 84px;
   font-family: "Segoe UI";
-  font-weight: 200;
+  font-weight: 300;
 }
 .services {
   margin-top: -10px;
 }
 .services__container__header {
-    font-size: 74px;
+    font-size: 84px;
     font-family: "Segoe UI";
-    font-weight: 200;
+    font-weight: 300;
 }
 .services__container__offer__header {
   font-size: 25px;
@@ -179,11 +187,11 @@ input:focus {
   max-width: 1024px;
 }
 .footer__header {
-  font-size: 30px;
+  font-size: 39px;
   margin: 0;
   font-family: "Segoe UI";
-  text-align: center;
-  margin-top: 50px;
+  text-align: left;
+  margin-top: 170px;
 }
 .footer__content {
   display: table;
@@ -246,34 +254,42 @@ input:focus {
   vertical-align: middle;
   cursor: pointer;
 }
-.map-decorator {
-  background-image: url("../img/angled-decorator__top.png");
-  z-index: 2000;
-    background-image: url(../img/angled-decorator__top.png);
-    height: 134px;
-    width: 100%;
-    display: inline-block;
-    background-position-x: center;
-    position: relative;
-    top: 138px;
-}
 #map {
-  height: 400px;
+  height: 55vh;
   margin-top: 25px;
 }
+.mapa .treug {
+  max-width: 100%;
+  min-width: 700px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  margin-top: 22px;
+}
+.mapa .uptr {
+	border-color: #fff rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: 12vh 75vw 0 26vw;
+    height: 0;
+    width: 0;
+}
 .services__container__offer__line {
-	right: 4.5%;
+	right: 0;
     opacity: 0;
     position: absolute;
-    max-width: 1920px;
-    min-width: 700px;
+    max-width: 100%;
+    min-width: 100%;
+	height: 310px;
+	background-image: url("../img/line.png");
+	background-size: cover;
 }
 .services__container__offer:hover .move-left {
-	 transform: translate(-250px, 20px);	
+	 transform: translate(-250px);	
+	 transition: 1s;
 	 cursor: pointer;
 }
 .services__container__offer:hover .services__container__offer__line {
-	transition: 1s;
+	transition: 0.5s;
 	opacity: 1;
 }
 .services__container__offer:hover .services__container__offer__header {
@@ -281,13 +297,13 @@ input:focus {
 }
 .foto {
 	opacity: 0;
-	width: 380px;
+	width: 440px;
     height: 252px;
     margin-left: 708px;
-	transition: 1s;
+	transition: 0.5s;
 }
 .services__container__offer:hover .foto {
-	transition: 1s;
+	transition: 0.5s;
 	opacity: 1;
 }
 .services__container__offer .f__foto {
@@ -296,7 +312,7 @@ input:focus {
     height: 165px;
     transform: rotate(-10deg);
     z-index: 102;
-
+	transition: 2s;
 }
 .services__container__offer .s__foto {
 	opacity: 0;
@@ -304,7 +320,7 @@ input:focus {
     height: 165px;
     transform: rotate(10deg);
     z-index: 101;
-	
+	transition: 2s;
 }
 .services__container__offer .t__foto {
 	opacity: 0;
@@ -314,21 +330,21 @@ input:focus {
     left: 71%;
     bottom: -65%;
     z-index: 100;
-	
+	transition: 2s;
 }
 .services__container__offer:hover .f__foto{
-	transition: 9s;
+	transition: 2s;
 	opacity: 1;
 }
 .services__container__offer:hover .s__foto{
-	transition: 10s;
+	transition: 2s;
 	opacity: 1;
 }
 .services__container__offer:hover .t__foto{
-	transition: 11s;
+	transition: 2s;
 	opacity: 1;
 }
 .about__text {
-	font-size: 23px;
+	font-size: 28px;
     font-family: "Segoe UI";
 }
