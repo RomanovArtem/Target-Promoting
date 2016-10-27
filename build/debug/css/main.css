@@ -57,7 +57,8 @@ body {
   min-width: 100px;
 }
 .header .menu__link {
-  margin: 0 18px 0 18px;
+  margin: 0 10px 0 10px;
+  font-family: "Segoe UI"
 }
 .header .phone {
   font-family: "Segoe UI";
@@ -70,14 +71,15 @@ body {
   color: #ff6500;
   display: inline-block;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 34px;
 }
 .menu__link:hover {
   color: #f00;
   text-shadow: 0 0 30px #ea4e4e;
 }
 .phone__number {
-  margin: 0;
+  margin-top: 2px;
+  margin-bottom: -6px;
 }
 .phone__callback {
   border-bottom: 1px dotted;
@@ -91,6 +93,8 @@ body {
 .content .about {
   max-width: 800px;
   margin: 0 auto;
+  margin-bottom: 7%;
+  line-height:1.5;
 }
 .content .services {
   background-color: #ff6500;
@@ -126,8 +130,7 @@ body {
 .content .services__container {
   margin: 0 auto;
   max-width: 800px;
-  margin-top: -90px;
-  padding: 150px 0 0 0;
+  padding: 150px 0 150px 0;
 }
 .content .services__container__header {
   margin: 0;
@@ -159,7 +162,7 @@ body {
 .about__header {
   font-size: 84px;
   font-family: "Segoe UI";
-  font-weight: 300;
+  font-weight: 400;
 }
 .services {
   margin-top: -10px;
@@ -167,7 +170,7 @@ body {
 .services__container__header {
     font-size: 84px;
     font-family: "Segoe UI";
-    font-weight: 300;
+    font-weight: 400;
 }
 .services__container__offer__header {
   font-size: 25px;
@@ -183,28 +186,35 @@ input:focus {
   outline: 0;
 }
 .footer {
-  margin: 35px auto 0;
-  max-width: 1024px;
-}
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+ }
+
 .footer__header {
-  font-size: 39px;
-  margin: 0;
+  font-size: 46px;
   font-family: "Segoe UI";
-  text-align: left;
-  margin-top: 170px;
+  font-weight: 400;
+  margin-bottom: 30px;
+ 
 }
 .footer__content {
+  line-height: 1.5;
+  font-family: "Segoe UI";
   display: table;
-  font-size: 18px;
-  margin-top: 34px;
+  font-size: 23px;
+  width: 97%;
 }
-.footer__content__email,
+.footer__content__email {
+	display: table-cell;
+}
 .footer__content__address {
-  display: table-cell;
-  width: 474px;
-}
+   width: 72%;
+   margin-right: 4%;
+ }
 .footer__content__email .email {
   margin-top: 24px;
+
 }
 .email__input {
   box-shadow: inset 0 0 6px #ff6500;
@@ -264,7 +274,7 @@ input:focus {
   height: auto;
   position: absolute;
   z-index: 1;
-  margin-top: 22px;
+ 
 }
 .mapa .uptr {
 	border-color: #fff rgba(0, 0, 0, 0);
